@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "slaide": {
+      "url": "https://app.slaide.de/api/mcp"
+    }
+  }
+}

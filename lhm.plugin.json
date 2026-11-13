@@ -1,0 +1,62 @@
+{
+  "author": "Slaide",
+  "authorUrl": "https://www.slaide.de",
+  "cloudEndpoint": "https://app.slaide.de/api/mcp",
+  "description": "AI presentation maker: build, edit and export PowerPoint slide decks, Word documents and Excel workbooks from chat.",
+  "homepage": "https://www.slaide.de/ai-assistants",
+  "icon": "https://www.slaide.de/brand/slaide-mcp-icon-512.png",
+  "identifier": "slaide",
+  "name": "Presentations & Slides by Slaide",
+  "prompts": [],
+  "resources": [],
+  "tags": [
+    "presentation",
+    "powerpoint",
+    "slides",
+    "ai presentation maker",
+    "slide deck generator",
+    "pitch deck",
+    "pdf to powerpoint",
+    "word",
+    "excel",
+    "documents"
+  ],
+  "tools": [
+    {
+      "name": "search_documents",
+      "description": "List your Slaide documents by title or recency.",
+      "inputSchema": { "type": "object" }
+    },
+    {
+      "name": "get_document",
+      "description": "Read the pages, speaker notes or cells of one of your Slaide documents.",
+      "inputSchema": { "type": "object" }
+    },
+    {
+      "name": "create_document",
+      "description": "Start a background job that builds a new presentation, document or workbook from a topic, notes or an attached file.",
+      "inputSchema": { "type": "object" }
+    },
+    {
+      "name": "update_document",
+      "description": "Change pages of an existing Slaide document. Changes are versioned and can be restored in Slaide.",
+      "inputSchema": { "type": "object" }
+    },
+    {
+      "name": "get_job",
+      "description": "Report the progress and the result of a Slaide job.",
+      "inputSchema": { "type": "object" }
+    },
+    {
+      "name": "export_document",
+      "description": "Export a document as PowerPoint, PDF, Word, PNG or Excel behind a private link that expires after 15 minutes.",
+      "inputSchema": { "type": "object" }
+    },
+    {
+      "name": "cancel_job",
+      "description": "Stop a running Slaide job.",
+      "inputSchema": { "type": "object" }
+    }
+  ],
+  "version": "1.0.0"
+}

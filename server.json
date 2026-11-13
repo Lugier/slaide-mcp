@@ -1,0 +1,13 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "de.slaide/slaide",
+  "title": "Presentations & Slides by Slaide",
+  "description": "AI presentation maker: create, edit and export PowerPoint slide decks and documents from chat.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.slaide.de/ai-assistants",
+  "icons": [
+    { "src": "https://app.slaide.de/brand/slaide-mcp-icon-512.png", "mimeType": "image/png", "sizes": ["512x512"] },
+    { "src": "https://app.slaide.de/icon.svg", "mimeType": "image/svg+xml", "sizes": ["any"] }
+  ],
+  "remotes": [{ "type": "streamable-http", "url": "https://app.slaide.de/api/mcp" }]
+}
