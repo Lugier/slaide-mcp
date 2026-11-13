@@ -1,0 +1,31 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "slaide",
+  "version": "1.0.0",
+  "description": "AI presentation maker: build, edit and export PowerPoint slide decks, Word documents and Excel workbooks from chat.",
+  "author": {
+    "name": "Slaide",
+    "email": "info@slaide.de",
+    "url": "https://www.slaide.de"
+  },
+  "homepage": "https://www.slaide.de/ai-assistants",
+  "repository": "https://github.com/Lugier/slaide-mcp",
+  "license": "MIT",
+  "keywords": [
+    "presentation",
+    "powerpoint",
+    "slides",
+    "pitch-deck",
+    "ai-presentation-maker",
+    "mcp"
+  ],
+  "extensions": {
+    "com.nousresearch.hermes": {
+      "servers": {
+        "slaide": {
+          "trust": "untrusted"
+        }
+      }
+    }
+  }
+}

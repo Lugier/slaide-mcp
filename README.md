@@ -56,14 +56,17 @@ Generic client configuration:
 
 **Cursor:** the same snippet in `.cursor/mcp.json`, or install the [Slaide Cursor plugin](https://github.com/Lugier/slaide-cursor-plugin).
 
-**Hermes Agent:** add to `~/.hermes/config.yaml`:
+**Hermes Agent:** this repository is a portable Agent Plugin (`plugin.json`, `mcp.json`, skill). Add the server with sign-in to `~/.hermes/config.yaml`, then run `hermes mcp login slaide`:
 
 ```yaml
 mcp_servers:
   slaide:
     url: https://app.slaide.de/api/mcp
     auth: oauth
+    trust: untrusted
 ```
+
+**Agent skill (Claude Code, Cursor, Codex and others):** `npx skills add Lugier/slaide-skills`, see [skills.sh](https://skills.sh/lugier/slaide-skills/ai-presentation-maker). The same skill is in this repository under `skills/ai-presentation-maker`.
 
 To disconnect, open Slaide → Settings → Account → AI assistants. Access stops immediately.
 
@@ -72,6 +75,8 @@ More setup guides: [Slaide for AI assistants](https://www.slaide.de/ai-assistant
 ## Listings
 
 - Official MCP Registry: `de.slaide/slaide`
+- [LobeHub](https://lobehub.com/mcp/slaide)
+- [skills.sh](https://skills.sh/lugier/slaide-skills/ai-presentation-maker)
 
 ## Links
 
